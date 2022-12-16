@@ -10,6 +10,7 @@
 
 body {
     height: 100vh;
+    width: 100vw;
     /*background: linear-gradient(120deg, #b5f3f0, #0098b6);*/
     display: flex;
     align-items: center;
@@ -58,4 +59,15 @@ body {
 
 .relogio #data {
     font-weight: bolder;
+}
+
+@media screen and (max-width: 600px) {
+    .relogio {
+        width: 90%;
+    }
+
+    .relogio div.relogio-tempo {
+        margin: 0;
+        width: 110px;
+    }
 }
